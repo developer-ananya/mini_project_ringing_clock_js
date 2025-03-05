@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="alarm.css">
+
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR77c73ROyv4bxL1eu0xAOpAoGzrgH5Svxnrg&s">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+
+<body>
+    
+    <div id="alarm">
+        <h1> Alarm Clock  <i id="icon" class="fa-solid fa-clock"></i></h1>
+
+        <h2>⏰</h2>
+       
+
+        <h3 id="timer"></h3>
+
+       
+  
+        <h4 id="bold"></h4>
+
+        <video src="./alarm video.mp4" id="vid" style="height: 250px;"></video>
+
+        <audio id="music" src="./veer_jara_love_theme.mp3"></audio>
+
+        <input type="time" id="inp"><br><br>
+
+    <button onclick="clockk()" id="start">Set Alarm</button>
+
+    <button onclick="stop()" id="stop">Stop</button>
+
+  </div>
+
+    <script src="./alarm.js"></script>
+</body>
+</html>

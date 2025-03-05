@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, #1a1a2e, #16213e);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#alarm {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.7);
+    width: 350px;
+}
+h1{
+
+    font-family: "Grechen Fuemen", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+h2{
+    font-size: 40px;
+}
+
+
+#icon {
+    font-size: 30px;
+    color: b;
+    transition: transform 0.3s ease-in-out;
+}
+
+#icon:hover {
+    transform: rotate(360deg);
+    color: black;
+}
+
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: black;
+}
+
+
+#bold {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(200, 7, 7);
+
+}
+
+
+#vid {
+    width: 100%;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5); */
+}
+
+
+#inp {
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: #16213e;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+#inp:hover {
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.9);
+}
+
+
+
+button {
+    font-size: 16px;
+    padding: 12px;
+    margin: 10px 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 45%;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+
+#start {
+    background: linear-gradient(45deg, #84ff00, #001aff);
+    box-shadow: 0px 0px 10px rgba(0, 198, 255, 0.7);
+}
+
+#start:hover {
+    box-shadow: 0px 0px 20px rgba(0, 198, 255, 1);
+    transform: scale(1.05);
+}
+
+
+#stop {
+    background: linear-gradient(45deg, #de0c0c, #392bff);
+    box-shadow: 0px 0px 10px rgba(255, 65, 108, 0.7);
+}
+
+#stop:hover {
+    box-shadow: 0px 0px 20px rgba(255, 65, 108, 1);
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 450px) {
+    #alarm {
+        width: 90%;
+    }
+    
+    #inp {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
